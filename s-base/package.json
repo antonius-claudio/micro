@@ -3,7 +3,7 @@
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "serve": "sirv dist -c --port 8082",
+    "serve": "sirv dist -c",
     "test": "jest",
     "format": "prettier --write ./**/*.{svelte,js}"
   },
