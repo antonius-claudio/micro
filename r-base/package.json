@@ -1,7 +1,7 @@
 {
   "name": "@micro/r-base",
   "scripts": {
-    "start": "webpack serve --port=8081",
+    "start": "webpack serve",
     "start:standalone": "webpack serve --env standalone",
     "build": "webpack --mode=production",
     "analyze": "webpack --mode=production --env analyze",
