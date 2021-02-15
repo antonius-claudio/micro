@@ -3,7 +3,12 @@
     [headers.values]
       Access-Control-Allow-Origin = "*"
 [[redirects]]
-  from = "/*"
+  from = "/s-base"
+  to = "/index.html"
+  status = 200
+  force = true
+[[redirects]]
+  from = "/r-base"
   to = "/index.html"
   status = 200
   force = true
