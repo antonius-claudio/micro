@@ -61,7 +61,17 @@
     }
   </script>
   <% } %>
-
+  <script type="systemjs-importmap">
+    {
+      "imports": {
+        "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
+        "@micro/root-config": "https://root-base.netlify.app/micro-root-config.js",
+        "@micro/api": "https://api-gate.netlify.app/micro-api-gate.js",
+        "@micro/r-base": "https://r-base.netlify.app/micro-r-base.js",
+        "@micro/s-base": "https://s-base.netlify.app/micro-s-base.js"
+      }
+    }
+  </script>
   <!--
     If you need to support Angular applications, uncomment the script tag below to ensure only one instance of ZoneJS is loaded
     Learn more about why at https://single-spa.js.org/docs/ecosystem-angular/#zonejs
