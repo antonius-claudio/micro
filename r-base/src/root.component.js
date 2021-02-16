@@ -6,11 +6,15 @@ export default function Root(props) {
 
   React.useEffect(() => {
     getNilaiLokal();
+    window.addEventListener("addFromSBase", detectEvtFromSBase)
   }, []);
+
+  const detectEvtFromSBase = () => {
+    getNilaiLokal();
+  };
 
   const getNilaiLokal = async () => {
     const nilai = await getNilai();
-    console.log('nilai', nilai)
     setNilaiLokal(nilai);
   };
 
@@ -18,6 +22,8 @@ export default function Root(props) {
     const newVal = nilaiLokal + 1;
     const newNilai = await setNilai(newVal);
     setNilaiLokal(newNilai);
+    const event = new CustomEvent('addFromRBase');
+    window.dispatchEvent(event);
   };
 
   return <section>
