@@ -56,7 +56,8 @@
         "@micro/root-config": "https://root-base.netlify.app/micro-root-config.js",
         "@micro/api": "https://api-gate.netlify.app/micro-api-gate.js",
         "@micro/r-base": "https://r-base.netlify.app/micro-r-base.js",
-        "@micro/s-base": "https://s-base.netlify.app/micro-s-base.js"
+        "@micro/s-base": "https://s-base.netlify.app/micro-s-base.js",
+        "@micro/styleguide" : "http://localhost:8080/micro-styleguide.js"
       }
     }
   </script>
@@ -91,9 +92,9 @@
     <single-spa-router>
       <nav>
         <ul>
-          <li><a href="/">home</a></li>
-          <li><a href="/r-base">r-base</a></li>
-          <li><a href="/s-base">s-base</a></li>
+          <a href="/"><li>home</li></a>
+          <a href="/r-base"><li>r-base</li></a>
+          <a href="/s-base"><li>s-base</li></a>
         </ul>
       </nav>
       <main>
@@ -120,6 +121,7 @@
 <body>
   <script>
     System.import('@micro/root-config');
+    System.import('@micro/styleguide');
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>
