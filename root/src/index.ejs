@@ -57,7 +57,7 @@
         "@micro/api": "https://api-gate.netlify.app/micro-api-gate.js",
         "@micro/r-base": "https://r-base.netlify.app/micro-r-base.js",
         "@micro/s-base": "https://s-base.netlify.app/micro-s-base.js",
-        "@micro/styleguide" : "http://localhost:8080/micro-styleguide.js"
+        "@micro/styleguide": "https://micro-styleguide.netlify.app/micro-styleguide.js"
       }
     }
   </script>
@@ -69,7 +69,8 @@
         "@micro/root-config": "https://root-base.netlify.app/micro-root-config.js",
         "@micro/api": "https://api-gate.netlify.app/micro-api-gate.js",
         "@micro/r-base": "https://r-base.netlify.app/micro-r-base.js",
-        "@micro/s-base": "https://s-base.netlify.app/micro-s-base.js"
+        "@micro/s-base": "https://s-base.netlify.app/micro-s-base.js",
+        "@micro/styleguide": "https://micro-styleguide.netlify.app/micro-styleguide.js"
       }
     }
   </script>
@@ -98,17 +99,18 @@
         </ul>
       </nav>
       <main>
+        <route path="/" exact={true}>
+          <section>
+            <div>
+              Holla
+            </div>
+          </section>
+        </route>
         <route path="r-base">
           <application 
             name="@micro/r-base"
           ></application>
         </route>
-        <!-- <route path="v-base">
-          <application 
-            name="@micro/v-base"
-            payload="@micro/api"
-          ></application>
-        </route> -->
         <route path="s-base">
           <application 
             name="@micro/s-base"
