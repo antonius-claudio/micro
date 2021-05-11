@@ -1,3 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f3ecfa;
+}
+
+nav {
+  background-color: #7c66b0;
+}
+
 nav > ul {
   text-decoration: none;
   list-style: none;
@@ -8,17 +21,47 @@ nav > ul {
 
 nav > ul > a {
   padding: 10px 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav > ul > a:hover {
+  background-color: #6749b0;
+  color: #d9d9d9;
 }
 
 section > button {
   background-color: #eeeeee;
   padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #00000061;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+section > button:hover {
+  background-color: #d3d3d3;
 }
 
 section > div {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 30px;
-  margin: 10px 0;
+}
+
+#single-spa-application\:\@micro\/r-base section {
+  padding: 30px;
+  margin: 10px;
+  border-radius: 4px;
+  background-color: #53cf95a1;
+  box-shadow: 2px 2px 4px 2px #e5787840;
+  color: #333145;
+}
+
+#single-spa-application\:\@micro\/s-base section {
+  padding: 30px;
+  margin: 10px;
+  border-radius: 4px;
+  background-color: #cf8053a1;
+  box-shadow: 2px 2px 4px 2px #4f54d140;
+  color: #333145;
 }
